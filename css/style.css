@@ -141,12 +141,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+	position: relative; /*хз, надо с этим разбиратся, он возмущается на position*/
 	text-align: center;
 	will-change: transform;
 	transition: var(--transition);
 	top: -1px;
-	z-index: 10;
 }
 
 /*настройка шрифта article*/
@@ -155,9 +154,6 @@ body {
 	font-size: calc(var(--index) * 1.8);
 	letter-spacing: calc(var(--index) / 7.5);
 	transform: var(--main-article-transform);
-	/*хз, надо с этим разбиратся, он возмущается на position*/
-	position: relative;
-	z-index: 10;
 }
 
 /*настройка текста article*/
